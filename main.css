@@ -1,0 +1,160 @@
+html {
+    background: linear-gradient(0.25turn, #141d50, #6e8ba2, #0e249a);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: antiquewhite;
+    text-shadow: 1px 1px 2px pink;
+}
+
+h1 {
+    font-size: 3rem;
+    font-style: italic;
+}
+
+h3 {
+    font-style: italic;
+}
+
+ol, h3 {
+    width: 65%;
+    margin-left: 6%;
+    color: antiquewhite;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px pink;
+}
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.area-box {
+    width: 60%;
+    height: 50%;
+    display: flex;   
+    margin-right: 10%; 
+}
+
+#area {
+ width: 21rem;
+ min-width: 21rem;
+ min-height: 21rem;
+ height: 21rem;
+ display: flex;
+ flex-wrap: wrap;
+ background-color:#f3e5f5;
+ border-radius: 10%;
+ border: 1rem solid #9a60d0;
+ box-shadow: 0.5rem 1rem 2rem 0.5rem #FFA2BE; 
+}
+
+.box {
+    width: 7rem;
+    height: 7rem;
+    border: 1px solid;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.7rem solid #9a60d0;    
+}
+
+#present-winner {
+   display: none;
+}
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0000009c;
+}
+
+#modal-window {
+    width: 50%;
+    height: 40%;
+    background-color: #310956;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2rem;
+    text-align: center;
+    font-size: 3rem;
+    color: antiquewhite;
+    padding-top: 1rem;
+    border: 0.5rem solid #C923DD;
+    text-shadow: 1.2px 1.2px 2px #C923DD;    
+}
+
+#new-game {
+    width: 10rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+    background-color: blueviolet;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    padding-top: 0.8rem;
+    border: 0.3rem solid #C923DD;
+}
+
+.circle {
+    width: 100%;
+    height: 100%;
+    stroke-dasharray: 280;
+    stroke-dashoffset: 280 ;
+    animation: draw 2s forwards;
+}
+
+@keyframes draw {
+    100% {stroke-dashoffset: 0;}
+ }
+
+.cross{
+    width: 100%;
+    height: 100%;
+}
+
+.first{
+    stroke-dasharray: 200 ;
+    stroke-dashoffset: 200 ;
+    animation: draw 0.6s forwards;
+}
+
+.second{
+    stroke-dasharray: 200 ;
+    stroke-dashoffset: 200 ;
+    animation: draw 0.8s 0.8s forwards;
+}
+
+@media only screen and (max-width: 700px) {
+    .conteiner {
+        display: flex;
+        flex-direction: column;
+        margin-left: 8%;
+    }
+
+    #modal-window {
+        font-size: 2rem;
+    }
+}
