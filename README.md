@@ -1,3 +1,6 @@
+# Tic Tac Toe
+The popular game for two players.
+
 ## OBJECTIVE:
 This project aims to develop a Tic Tac Toe game using HTML, CSS, JavaScript. It mainly consists of developing and implementing a computer program that plays Tic Tac Toe against another player. In order to understand what Tic Tac Toe game is and how to play the game, below is the description.
 
